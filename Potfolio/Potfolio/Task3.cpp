@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <array>
 using namespace std;
 int main()
 {
@@ -7,24 +7,22 @@ int main()
 	int b;
 	int c;
 	int highest = 1;
-	cout << "Enter a value: " << endl;
-	cin >> a;
-	
-	for (int i = 1; i<= a ; i++)
+	array<int, 8> ary;
+	cout << "Enter values: " << endl;
+	cin >> ary[0] >> ary[1] >> ary[2] >> ary[3] >> ary[4] >> ary[5] >> ary[6] >> ary[7];
+	cout << endl;
+	for (int i = 0; i < 7; i++)
 	{
 		
-		b = i * i;
-		if (b >= (a*a))
+		b = ary[i] * ary[i];
+		if (b > highest)
 		{
-			if (b > highest)
-			{
-				highest = b;
-				c = i;
-			}
-			
+			highest = b;
+			c = i;
 		}
+		
 	}
-	cout << endl << endl << "The highest square number is: " << c << " at " << highest;
+	cout << endl << "The highest square number is: " << c << " at " << highest;
 
 	return 0;
 }
