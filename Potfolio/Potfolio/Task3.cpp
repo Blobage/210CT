@@ -1,28 +1,33 @@
 #include <iostream>
-#include <array>
+
 using namespace std;
 int main()
 {
 	int a;
 	int b;
-	int c;
+	float c;
 	int highest = 1;
-	array<int, 8> ary;
-	cout << "Enter values: " << endl;
-	cin >> ary[0] >> ary[1] >> ary[2] >> ary[3] >> ary[4] >> ary[5] >> ary[6] >> ary[7];
-	cout << endl;
-	for (int i = 0; i < 7; i++)
+	cin >> a;
+	
+	for (int i = 1; i <= a; i++)
 	{
-		
-		b = ary[i] * ary[i];
-		if (b > highest)
+		b = sqrt(i);
+		c = sqrtf(i);
+		cout << endl << i<<endl;
+		cout << b;
+		cout << endl;
+		cout << c;
+		if (c == b)
 		{
-			highest = b;
-			c = i;
+			if (b > highest)
+			{
+				highest = i;
+				
+			}
 		}
-		
 	}
-	cout << endl << "The highest square number is: " << c << " at " << highest;
+	cout << endl;
+	cout << "The highest is: "<<highest;
 
 	return 0;
 }
