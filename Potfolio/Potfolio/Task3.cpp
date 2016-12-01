@@ -13,13 +13,13 @@ int main()
 	{
 		b = sqrt(i);
 		c = sqrtf(i);
-		cout << endl << i<<endl;
+		cout << endl << i << endl;
 		cout << b;
 		cout << endl;
 		cout << c;
 		if (c == b)
 		{
-			if (b > highest)
+			if (i > highest)
 			{
 				highest = i;
 				
