@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	vector<string> ary;
+	vector<string> sentence;
 
 	while(true)
 	{
@@ -14,7 +14,7 @@ int main()
 		cin >> word;
 		if (word != "")
 		{
-			ary.push_back(word);
+			sentence.push_back(word);
 		}
 		
 		
@@ -24,9 +24,9 @@ int main()
 		}
 	}
 	
-	for (int i = ary.size() - 1; i >= 0; i--)
+	for (int i = sentence.size() - 1; i >= 0; i--)
 	{
-		cout << ary[i] << " ";
+		cout << sentence[i] << " ";
 
 	}
 	

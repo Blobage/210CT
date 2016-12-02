@@ -23,6 +23,7 @@ int main()
 
 	secondaryList.push_back(mainList[0]);
 	cout << secondaryList[0]<< endl;
+
 	for (int i = 1; i < (mainList.size() - 1); i++)
 	{
 		if (mainList[i]>mainList[i-1])
@@ -43,21 +44,9 @@ int main()
 				cout << "False 3" << endl;
 			}
 		}
-		/* 
-			if (secondaryList.size() > largestSubSequence.size())
-			{
-				largestSubSequence.clear();
-				largestSubSequence = secondaryList;
-				cout << "False 3" << endl;
-				secondaryList.clear();
-				cout << "False 4" << endl;
-				secondaryList.push_back(mainList[i]);
-				cout << "False 5" << endl;
-			}
-		*/
-		
+				
 	}
-
+	
 	if (secondaryList.size() > largestSubSequence.size())
 	{
 		secondaryList.push_back(mainList[(mainList.size()-1)]);

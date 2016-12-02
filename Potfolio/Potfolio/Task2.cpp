@@ -11,7 +11,6 @@ int main()
 	int a;
 	cin >> a;
 	int value = 1;
-	//int itterator;
 	int highCount = 0;
 	int valueCount = 0;
 	for (int i = 1; i <= a; i++)
@@ -29,13 +28,17 @@ int main()
 		{
 			valueCount += 1;
 		}
+		/*else if (valueString[j] != '0')
+		{
+			highCount = valueCount;
+		}*/
 		else
 		{
 			break;
 		}
 	}
 	
-	cout<< endl<< valueCount << " trailing zeros";
+	cout<< endl<< highCount << " trailing zeros";
 		
 	return 0;
 

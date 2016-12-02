@@ -49,7 +49,7 @@ bool recursive(int number1 , int number2, int prime_Count)
 	if (number2 < number1)
 	{
 		//cout << primeCount;
-		recursive(number1, (number2 + 1), primeCount);
+		return recursive(number1, (number2 + 1), primeCount);
 	}
 	else 
 	{
