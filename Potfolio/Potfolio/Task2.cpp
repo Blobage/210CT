@@ -38,7 +38,7 @@ int main()
 		}
 	}
 	
-	cout<< endl<< highCount << " trailing zeros";
+	cout<< endl<< valueCount << " trailing zeros";
 		
 	return 0;
 
