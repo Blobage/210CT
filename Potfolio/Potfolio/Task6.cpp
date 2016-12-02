@@ -1,37 +1,33 @@
 #include <iostream>
-#include <list>
-#include <array>
+#include <vector>
 #include <string>
 
 using namespace std;
 
 int main()
 {
-	array<string, 50> ary;
+	vector<string> ary;
 
-	for (int i = 0; i < 50; i++)
+	while(true)
 	{
-		cin >> ary[i];
-		if (ary[i] == ".")
+		string word;
+		cin >> word;
+		if (word != "")
+		{
+			ary.push_back(word);
+		}
+		
+		
+		if (cin.get() == '\n')
 		{
 			break;
 		}
 	}
-
-	for (int i = 9; i >= 0; i--)
+	
+	for (int i = ary.size() - 1; i >= 0; i--)
 	{
-		if (ary[i] != "")
-		{
-			if (ary[i] == ".")
-			{
-				cout << ary[i];
-			}
-			else
-			{
-				cout << ary[i] << " ";
+		cout << ary[i] << " ";
 
-			}
-		}
 	}
 	
 	return 0;
